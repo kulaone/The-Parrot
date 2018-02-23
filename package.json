@@ -1,0 +1,15 @@
+{
+  "name": "The-Parrot",
+  "description": "The Parrot is an echo Action on Google, that will repeat any thing you say to it.",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Daniel Gwerzman",
+  "scripts": {
+    "start": "functions deploy parrot --trigger-http",
+    "deploy": "gcloud beta functions deploy parrot --trigger-http --stage-bucket {YOUR Project ID}"
+  },
+  "dependencies": {
+    "actions-on-google": "^1.0.0"
+  }
+}
